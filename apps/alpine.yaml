@@ -2,14 +2,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: alpine
+  name: alpine-app
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/JQuay/my-argocd-apps.git
     targetRevision: HEAD
-    path: alpine
+    path: alpine-app
   destination:
     server: https://kubernetes.default.svc
     namespace: alpine
