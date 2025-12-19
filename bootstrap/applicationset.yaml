@@ -14,6 +14,8 @@ spec:
             exclude: true          # Exclude from auto-generation
           - path: bootstrap
             exclude: true          
+          - path: apps
+            exclude: true          
   template:
     metadata:
       name: '{{path.basename}}'
