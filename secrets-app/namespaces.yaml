@@ -1,1 +1,15 @@
 
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: my-app
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: redis-app
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nginx-app
