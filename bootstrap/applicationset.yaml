@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/JQuay/my-argocd-apps.git
         revision: HEAD
         directories:
-          - path: '*-app'    # Matches nginx-app, redis-app, etc.
+          - path: '*'    # Matches nginx-app, redis-app, etc.
           - path: secrets-app
             exclude: true          # Exclude from auto-generation
           - path: bootstrap
