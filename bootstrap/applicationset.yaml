@@ -10,10 +10,10 @@ spec:
         revision: HEAD
         directories:
           - path: '*-app'    # Matches nginx-app, redis-app, etc.
-          - path: secrets-app
-            exclude: true          # Exclude from auto-generation
-          - path: bootstrap
-            exclude: true          
+          # - path: secrets-app
+          #   exclude: true          # Exclude from auto-generation
+          # - path: bootstrap
+          #   exclude: true          
   template:
     metadata:
       name: '{{path.basename}}'
